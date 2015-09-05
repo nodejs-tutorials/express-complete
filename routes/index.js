@@ -27,4 +27,8 @@ router.get('/profile', function (req, res) {
     res.render('profile', {id: profile_id});
 });
 
+router.get('/logout',function(req,res){
+    res.json({"logout":"yes"});
+});
+
 module.exports = router;
